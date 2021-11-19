@@ -1,8 +1,8 @@
 import pool from '../lib/utils/pool.js';
 import setup from '../data/setup.js';
 import request from 'supertest';
-import app, { set } from '../lib/app.js';
-import Weed from '../lib/models/Weed.js';
+import app from '../lib/app.js';
+// import Weed from '../lib/models/Weed.js';
 
 describe('chillamos', () => {
   beforeEach(() => {
