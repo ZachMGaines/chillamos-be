@@ -1,7 +1,12 @@
-const fs = require('fs').promises;
-
-module.exports = (pool) => {
+import { promises as fs } from 'fs';
+import path from 'path';
+export default (pool) => {
   return fs
-    .readFile(`${__dirname}/../sql/setup.sql`, { encoding: 'utf-8' })
+    .readFile(
+      './sql/setup.sql',
+      {
+        encoding: 'utf-8',
+      }
+    )
     .then((sql) => pool.query(sql));
 };

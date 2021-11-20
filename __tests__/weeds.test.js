@@ -5,7 +5,7 @@ import app from '../lib/app.js';
 // import Weed from '../lib/models/Weed.js';
 
 describe('chillamos', () => {
-  beforeEach(() => {
+  beforeAll(() => {
     return setup(pool);
   });
 
